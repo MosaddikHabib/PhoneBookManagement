@@ -186,7 +186,7 @@ int main ()
         switch(choice){
         case 1:
             system("cls");
-            c1.createContact();
+            c1.writeOnFile();
             break;
 
         case 2:
