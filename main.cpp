@@ -156,5 +156,7 @@ class contact {
 
 int main ()
 {
-    cout<<"Hello world";
+    system("cls");
+    system("color 3F"); //here color XY means , X=bg color and Y = text color
+
 }
