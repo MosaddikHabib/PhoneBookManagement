@@ -27,6 +27,14 @@ class contact {
         cout<<"E-Mail address: ";
         cin>>email;
     }
+
+    void showContact()
+    {
+        cout<<"Name : "<<fName<<" "<<lName<<endl;
+        cout<<"Phone : "<<phNo<<endl;
+        cout<<"Living Address : "<<address<<endl;
+        cout<<"E-Mail : "<<email<<endl;
+    }
 };
 
 int main ()
