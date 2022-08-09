@@ -70,6 +70,25 @@ class contact {
         }
         f2.close();
     }
+
+    void searchOnFile(){
+        ifstream f3;
+        long long phone;
+        cout<< "Enter phone number : ";
+        cin>>phone;
+        f3.open("CMS.dat", ios::binary);
+
+        while(!f3.eof()){
+            if(f3.read(reinterpret_cast<char*>(this), sizeof(*this))){
+                if(phone==phNo){
+                    showContact();
+                    return;
+                }
+            }
+        }
+        cout<<"\n\n No record Found....";
+        f3.close;
+    }
 };
 
 int main ()
