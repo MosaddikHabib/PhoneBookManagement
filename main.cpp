@@ -120,6 +120,37 @@ class contact {
 
     }
 
+    void editContact()
+    {
+        long long phone;
+        fstream f6;
+
+        cout<< "Edit contact :";
+        cout<<endl<< "=================================";
+        cout<<endl<<"Enter the phone number to be edit: ";
+        cin>>phone;
+
+        f6.open("CMS.dat", ios::binary | ios:out | ios:in);
+
+        while(!f6.eof()){
+            if(f6.read(reinterpret_cast<char*>(this), sizeof(*this))){
+                if(phone == phNo)
+                {
+                    cout<<"Enter new record"<<endl;
+                    createContact();
+
+                    int pos = -1*sizeof(*this);
+                    f6.seekp(pos, ios::cur);
+                    f6.write(reinterpret_cast<char*>(this), sizeof(*this));
+                    cout<<endl<<endl<<"\tContact successfully updated...";
+
+                    return;
+                }
+            }
+        }
+        cout<<endl<<endl<<"No record found.";
+    }
+
 
 };
 
