@@ -188,14 +188,34 @@ int main ()
             system("cls");
             c1.createContact();
             break;
+
         case 2:
             system("cls");
             c1.readFromFile();
             break;
+
         case 3:
             system("cls");
             c1.searchOnFile();
             break;
+
+        case 4:
+            system("cls");
+            c1.deleteFromFile();
+            break;
+
+        case 5:
+            system("cls");
+            c1.editContact();
+            break;
+
+        case 0:
+            system("cls");
+            cout<<endl<<endl<<endl<<"Thank You user"<<endl<<endl<<endl;
+            exit(0);
+
+        default:
+            continue;
 
         }
     }
