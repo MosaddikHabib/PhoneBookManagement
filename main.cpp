@@ -1,7 +1,10 @@
-#include <iostream>
+#include<iostream>
+#include <conio.h>
+#include <fstream>
+
 using namespace std;
 
-int main()
+int main ()
 {
-    cout >> "Hello";
+    cout<<"Hello world";
 }
