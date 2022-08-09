@@ -130,7 +130,7 @@ class contact {
         cout<<endl<<"Enter the phone number to be edit: ";
         cin>>phone;
 
-        f6.open("CMS.dat", ios::binary | ios:out | ios:in);
+        f6.open("CMS.dat", ios::binary | ios::out | ios::in);
 
         while(!f6.eof()){
             if(f6.read(reinterpret_cast<char*>(this), sizeof(*this))){
