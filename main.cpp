@@ -159,5 +159,29 @@ int main ()
     system("cls");
     system("color 3F"); //here color XY means , X=bg color and Y = text color
 
-    cout<<endl<<endl<<endl<<endl<<endl<<endl<<"\t\t\t\t\t *Welcome to my Handmade phone-book management system"<<endl<<endl<<endl<<endl<<endl<<endl;
+    cout<<endl<<endl<<endl<<endl<<endl<<endl<<"\t\t\t\t\t Welcome to my Handmade phone-book management system"<<endl<<endl<<endl<<endl<<endl<<endl;
+    getch();
+
+    while(1){
+        contact c1;
+        int choice;
+
+        system("cls");
+        system("color 4F");
+
+        cout<<endl<<"phone-book management system";
+        cout<<endl<<endl<<"Main Menu";
+        cout<<endl<<"================================";
+        cout<<endl<<"[1] Add a new phone number";
+        cout<<endl<<"[2] List all contacts";
+        cout<<endl<<"[3] Search for contact";
+        cout<<endl<<"[4] Delete a contact";
+        cout<<endl<<"[5] Edit a contact";
+        cout<<endl<<"[0] Exit";
+        cout<<endl<<"================================";
+
+        cout<<endl<<"Enter your choice: ";
+        cin>>choice;
+
+    }
 }
