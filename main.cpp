@@ -218,5 +218,11 @@ int main ()
             continue;
 
         }
+
+        int opt;
+        cout<<endl<<endl<<"::Enter the choice"<<endl;
+        cout<<"[1] Main menu";
+        cout<<"[0] Exit";
+        cin>>opt;
     }
 }
