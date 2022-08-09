@@ -53,23 +53,23 @@ class contact {
         f1.close();
     }
 
-    void readFromFile()
-    {
-        ifstream f2;
-        f2.open("CMS.dat", ios::binary);
+    void readFromFile() {
+		ifstream f2;
+		f2.open("CMS.dat",ios::binary);
 
-        cout<<"\n========================================";
-        cout<< "List of Contact";
-        cout<<"\n========================================";
+		cout<<"\n================================\n";
+		cout<<"LIST OF CONTACTS";
+		cout<<"\n================================\n";
 
-        while(!f2.eof()){
-            if(f2.read(reinterpret_cast<char*>(this), sizeof(*this))){
-                showContact();
-                cout<<"\n========================================";
-            }
-        }
-        f2.close();
-    }
+		while(!f2.eof()) {
+			if(f2.read(reinterpret_cast<char*>(this),sizeof(*this)))
+			{
+				showContact();
+				cout<<"\n================================\n";
+			}
+		}
+		f2.close();
+	}
 
     void searchOnFile(){
         ifstream f3;
