@@ -213,6 +213,7 @@ int main ()
             system("cls");
             cout<<endl<<endl<<endl<<"Thank You user"<<endl<<endl<<endl;
             exit(0);
+            break;
 
         default:
             continue;
@@ -224,5 +225,19 @@ int main ()
         cout<<"[1] Main menu";
         cout<<"[0] Exit";
         cin>>opt;
+
+        switch(opt)
+        {
+            case 0:
+            system("cls");
+            cout<<endl<<endl<<endl<<"Thank You user"<<endl<<endl<<endl;
+            exit(0);
+            break;
+
+        default:
+            continue;
+        }
     }
+
+    return 0;
 }
