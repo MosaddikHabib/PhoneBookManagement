@@ -183,5 +183,20 @@ int main ()
         cout<<endl<<"Enter your choice: ";
         cin>>choice;
 
+        switch(choice){
+        case 1:
+            system("cls");
+            c1.createContact();
+            break;
+        case 2:
+            system("cls");
+            c1.readFromFile();
+            break;
+        case 3:
+            system("cls");
+            c1.searchOnFile();
+            break;
+
+        }
     }
 }
