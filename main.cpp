@@ -89,6 +89,11 @@ class contact {
         cout<<"\n\n No record Found....";
         f3.close;
     }
+
+    void deleteFromFile()
+    {
+
+    }
 };
 
 int main ()
