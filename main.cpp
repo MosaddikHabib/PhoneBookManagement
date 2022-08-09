@@ -159,7 +159,7 @@ int main ()
     system("cls");
     system("color 3F"); //here color XY means , X=bg color and Y = text color
 
-    cout<<endl<<endl<<endl<<endl<<endl<<endl<<"\t\t\t\t\t Welcome to my Handmade phone-book management system"<<endl<<endl<<endl<<endl<<endl<<endl;
+    cout<<endl<<endl<<endl<<endl<<endl<<endl<<endl<<endl<<endl<<endl<<endl<<endl<<"\t\t\t\t\t Welcome to my Handmade phone-book management system"<<endl<<endl<<endl<<endl<<endl<<endl;
     getch();
 
     while(1){
@@ -221,9 +221,10 @@ int main ()
         }
 
         int opt;
-        cout<<endl<<endl<<"::Enter the choice"<<endl;
-        cout<<"[1] Main menu";
-        cout<<"[0] Exit";
+        cout<<endl<<endl<<"\t\t\t\t\t::::::::::::::::::::::::::::::::::::"<<endl;
+        cout<<"\t\t\t\t\t\t[1] Main menu";
+        cout<<endl<<"\t\t\t\t\t\t[0] Exit";
+        cout<<endl<<"\t\t\t\t\tEnter your choice : ";
         cin>>opt;
 
         switch(opt)
