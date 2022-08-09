@@ -87,13 +87,40 @@ class contact {
             }
         }
         cout<<"\n\n No record Found....";
-        f3.close;
+        f3.close();
     }
 
     void deleteFromFile()
     {
+         long long phone;
+         int flag = 0;
+         ofstream f4;
+         ifstream f5;
+
+         f5.open("CMS.dat", iso::binary);
+         f4.open("temp.dat", iso::binary);
+
+         cout<<"Enter phone number to delete: ";
+         cin>>phone;
+
+         while(!f5.eof()){
+            if(f5.read(reinterpret_cast<char*>(this), sizeof(*this))){
+                if(phNo != phone){
+                    f4.write(reinterpret_cast<char*>(this), sizeof(*this)))
+                }
+                else flag =1;
+            }
+         }
+         f5.close();
+         f4.colse();
+         remove("CMS.dat");
+         rename("temp.dat", "CMS.dat");
+
+         flag==1 ? cout<<"\t contact deleted..." : cout<< "\t contact Not found...";
 
     }
+
+
 };
 
 int main ()
