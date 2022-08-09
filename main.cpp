@@ -35,6 +35,23 @@ class contact {
         cout<<"Living Address : "<<address<<endl;
         cout<<"E-Mail : "<<email<<endl;
     }
+
+    void writeOnFile()
+    {
+        char ch;
+        ofstream f1;
+        f1.open("CMS.dat", ios::binary | ios::app);
+
+        do{
+            createContact();
+            f1.write(reinterpret_cast<char*>(this), sizeof(*this));
+            cout<<"Do you have next data ? (y/n)";
+            cin>>ch;
+        }while(ch=='y');
+
+        cout<<"Contact has been successfully Created...";
+        f1.close();
+    }
 };
 
 int main ()
