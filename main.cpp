@@ -97,8 +97,8 @@ class contact {
          ofstream f4;
          ifstream f5;
 
-         f5.open("CMS.dat", iso::binary);
-         f4.open("temp.dat", iso::binary);
+         f5.open("CMS.dat", ios::binary);
+         f4.open("temp.dat", ios::binary);
 
          cout<<"Enter phone number to delete: ";
          cin>>phone;
@@ -106,13 +106,13 @@ class contact {
          while(!f5.eof()){
             if(f5.read(reinterpret_cast<char*>(this), sizeof(*this))){
                 if(phNo != phone){
-                    f4.write(reinterpret_cast<char*>(this), sizeof(*this)))
+                    f4.write(reinterpret_cast<char*>(this), sizeof(*this));
                 }
                 else flag =1;
             }
          }
          f5.close();
-         f4.colse();
+         f4.close();
          remove("CMS.dat");
          rename("temp.dat", "CMS.dat");
 
