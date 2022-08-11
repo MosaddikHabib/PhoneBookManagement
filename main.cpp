@@ -45,8 +45,10 @@ class contact {
         do{
             createContact();
             f1.write(reinterpret_cast<char*>(this), sizeof(*this));
-            cout<<"Do you have next data ? (y/n)";
-            cout<<endl<<"Input choice : ";
+
+            cout<<endl<<endl<<"\t\t\t\t\t::::::::::::::::::::::::::::::::::::::::::::"<<endl;
+            cout<<"\t\t\t\t\t\tDo you have next data ? (y/n)";
+            cout<<endl<<"\t\t\t\t\t\tInput choice : ";
             cin>>ch;
         }while(ch=='y');
 
