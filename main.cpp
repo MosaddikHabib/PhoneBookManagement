@@ -40,7 +40,7 @@ class contact {
     {
         char ch;
         ofstream f1;
-        f1.open("CMS.dat", ios::binary | ios::app);
+        f1.open("PBM.dat", ios::binary | ios::app);
 
         do{
             createContact();
@@ -55,7 +55,7 @@ class contact {
 
     void readFromFile() {
 		ifstream f2;
-		f2.open("CMS.dat",ios::binary);
+		f2.open("PBM.dat",ios::binary);
 
 		cout<<"\n================================\n";
 		cout<<"LIST OF CONTACTS";
@@ -76,7 +76,7 @@ class contact {
         long long phone;
         cout<< "Enter phone number : ";
         cin>>phone;
-        f3.open("CMS.dat", ios::binary);
+        f3.open("PBM.dat", ios::binary);
 
         while(!f3.eof()){
             if(f3.read(reinterpret_cast<char*>(this), sizeof(*this))){
@@ -97,7 +97,7 @@ class contact {
          ofstream f4;
          ifstream f5;
 
-         f5.open("CMS.dat", ios::binary);
+         f5.open("PBM.dat", ios::binary);
          f4.open("temp.dat", ios::binary);
 
          cout<<"Enter phone number to delete: ";
@@ -113,8 +113,8 @@ class contact {
          }
          f5.close();
          f4.close();
-         remove("CMS.dat");
-         rename("temp.dat", "CMS.dat");
+         remove("PBM.dat");
+         rename("temp.dat", "PBM.dat");
 
          flag==1 ? cout<<"\t contact deleted..." : cout<< "\t contact Not found...";
 
@@ -130,7 +130,7 @@ class contact {
         cout<<endl<<"Enter the phone number to be edit: ";
         cin>>phone;
 
-        f6.open("CMS.dat", ios::binary | ios::out | ios::in);
+        f6.open("PBM.dat", ios::binary | ios::out | ios::in);
 
         while(!f6.eof()){
             if(f6.read(reinterpret_cast<char*>(this), sizeof(*this))){
