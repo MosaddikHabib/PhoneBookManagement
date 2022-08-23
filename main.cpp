@@ -160,7 +160,9 @@ int main ()
     system("cls");
     system("color 3F"); //here color XY means , X=bg color and Y = text color
 
-    cout<<endl<<endl<<endl<<endl<<endl<<endl<<endl<<endl<<endl<<endl<<endl<<endl<<"\t\t\t\t\t Welcome to my Handmade phone-book management system"<<endl<<endl<<endl<<endl<<endl<<endl;
+    cout<<endl<<endl<<endl<<endl<<endl<<endl<<endl<<endl<<endl<<endl<<endl<<endl<<"\t\t\t\t\t Welcome to my Handmade phone-book management system";
+    cout<<endl<<"\t\t\t\t\t(Press any key to start................)";
+
     getch();
 
     while(1){
