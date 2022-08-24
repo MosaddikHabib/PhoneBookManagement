@@ -18,7 +18,7 @@ class contact {
         cout<<"Last Name: ";
         cin>>lName;
 
-        cout<<"Phone Number: ";
+        cout<<"Phone Number: (+880)";
         cin>>phNo;
 
         cout<<"Address: ";
@@ -31,7 +31,7 @@ class contact {
     void showContact()
     {
         cout<<"Name : "<<fName<<" "<<lName<<endl;
-        cout<<"Phone : "<<phNo<<endl;
+        cout<<"Phone : (+880)"<<phNo<<endl;
         cout<<"Living Address : "<<address<<endl;
         cout<<"E-Mail : "<<email<<endl;
     }
